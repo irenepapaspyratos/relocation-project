@@ -1,0 +1,100 @@
+/* Reset some basic elements */
+body {
+    background-color: #f6ecde;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+}
+
+footer,
+.navbar {
+    background-image: linear-gradient(#203f51, #111e2f);
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 50%;
+    mix-blend-mode: lighten;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section styling */
+.head {
+    background: url("../images/hero.png") no-repeat center center/cover;
+    width: inherit;
+}
+
+.hero {
+    color: #000;
+    text-align: center;
+    padding: 40rem 20rem;
+}
+
+/* Featured articles styling */
+.featured-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns layout */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.article {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#blog-2 {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Footer styling */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+}
