@@ -23,6 +23,9 @@ body {
     text-align: center;
 }
 
+.warning {
+    color: rgba(255, 0, 0, 0.533);
+}
 footer,
 .navbar {
     background-image: linear-gradient(#203f51, #111e2f);
@@ -43,6 +46,11 @@ footer,
     width: 100px;
     border-radius: 50%;
     mix-blend-mode: lighten;
+}
+
+.userSvg img {
+    width: 40px;
+    padding-right: 1rem;
 }
 
 .nav-links {
@@ -102,4 +110,12 @@ footer {
     position: inherit;
     bottom: 0;
     width: 100%;
+}
+
+/* Form styling */
+.formWrapper {
+    text-align: center;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
