@@ -18,6 +18,11 @@ body {
     line-height: 1.6;
 }
 
+.plain {
+    width: inherit;
+    text-align: center;
+}
+
 footer,
 .navbar {
     background-image: linear-gradient(#203f51, #111e2f);

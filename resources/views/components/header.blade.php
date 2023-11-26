@@ -2,8 +2,8 @@
 
     <div class="head">
         <section class="hero">
-            <h1>Beyond Borders</h1>
-            <p>Your guide to exploring the world.</p>
+            <h1>{{$headline}}</h1>
+            <p>{{$subline}}</p>
         </section>
     </div>
 

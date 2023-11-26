@@ -11,19 +11,19 @@
 </head>
 
 <body>
-    <x-Header />
+    <x-header headline="Beyond Borders" subline="Your guide to exploring the world." />
 
     <main>
 
-        <x-Navigation />
+        <x-navigation />
 
-        <section class="featured-articles">
+        <section class="plain">
             <h1>About-View<h1>
         </section>
 
     </main>
 
-    <x-Footer />
+    <x-footer />
 </body>
 
 </html>

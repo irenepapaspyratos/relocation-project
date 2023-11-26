@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <x-Header />
+    <x-header headline="Beyond Borders" subline="Your guide to exploring the world." />
 
     <main>
 
-        <x-Navigation />
+        <x-navigation />
 
         <section class="featured-articles">
             <article id="blog-1" class="article">
@@ -40,7 +40,7 @@
 
     </main>
 
-    <x-Footer />
+    <x-footer />
 </body>
 
 </html>
