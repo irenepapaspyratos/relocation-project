@@ -42,7 +42,7 @@ Route::get('/user/{name?}', function (?string $name = null) {
         return redirect('/login');
 
     if (!$name)
-        return redirect('/user' . '/' . session()->get('username'));
+        return redirect("/user/{session()->get('username')}");
 
     return view('user');
 });

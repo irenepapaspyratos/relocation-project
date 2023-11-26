@@ -16,6 +16,6 @@ class UserController extends Controller {
         $data = $req->input();
         $req->session()->put('username', $data['username']);
 
-        return redirect('/user' . '/' . $data['username']);
+        return redirect("/user/{$data['username']}");
     }
 }
