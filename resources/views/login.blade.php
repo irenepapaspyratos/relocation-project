@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Beyond Borders</title>
-
-    <link href="css/styles.css" rel="stylesheet" />
-</head>
+<x-head />
 
 <body>
-    <x-header headline="Beyond Borders" subline="Your guide to exploring the world." />
+    <x-header headline="BEYOND BORDERS" subline="Your guide to exploring the world." />
 
     <main>
 
         <x-navigation />
 
-        <x-login />
+        <section class="formWrapper">
+            <h2>Log In</h2>
+            <x-loginForm />
+        </section>
+
     </main>
 
     <x-footer />
