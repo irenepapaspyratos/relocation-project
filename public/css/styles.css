@@ -21,11 +21,14 @@ body {
 .plain {
     width: inherit;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .warning {
     color: rgba(255, 0, 0, 0.533);
 }
+
 footer,
 .navbar {
     background-image: linear-gradient(#203f51, #111e2f);
@@ -112,10 +115,15 @@ footer {
     width: 100%;
 }
 
-/* Form styling */
+/* Form Wrapper styling */
 .formWrapper {
     text-align: center;
     width: 30%;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Table styling */
+.table {
+    display: inline;
 }
