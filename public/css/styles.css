@@ -106,7 +106,7 @@ label.dropdown-toggle::before {
     margin-right: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
     .dropdown-toggle {
         display: block;
     }
@@ -219,4 +219,8 @@ footer {
 /* Table styling */
 .table {
     display: inline;
+}
+
+.w-5 {
+    display: none;
 }
