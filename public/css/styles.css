@@ -216,6 +216,11 @@ footer {
     margin-right: auto;
 }
 
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Table styling */
 .table {
     display: inline;

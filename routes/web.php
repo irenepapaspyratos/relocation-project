@@ -25,12 +25,17 @@ Route::view('/destinations', 'destinations');
 Route::view('/advice', 'advice');
 
 
-/* LOGIN/LOGOUT */
-Route::post('/login', [UserController::class, 'login']);
+/* REGISTER/LOGIN/LOGOUT */
+Route::controller(UserController::class)->group(function () {
+    Route::post('/register', 'register');
+    Route::post('/login', 'login');
+});
+
+Route::view('/register', 'register');
 
 Route::get('/login', function () {
     if (session()->has('username'))
-        return redirect('/user/{name}')->with('name', session()->get('username'));
+        return redirect('/user' . '/' . session()->get('username'));
     return view('login');
 });
 
@@ -45,7 +50,7 @@ Route::get('/user/{name?}', function (?string $name = null) {
     if (!session()->has('username'))
         return redirect('/login');
     if (!$name)
-        return redirect("/user/{session()->get('username')}");
+        return redirect('/user' . '/' . session()->get('username'));
     return view('user');
 });
 
