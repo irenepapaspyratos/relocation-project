@@ -129,11 +129,21 @@ label.dropdown-toggle::before {
     }
 
     .nav-links li {
+        font-size: clamp(16px, 2vmax, 18px);
         margin: 10px 0;
     }
 }
 
 /* Hero section styling */
+header {
+    background-image: linear-gradient(
+        to right,
+        #031b30 20%,
+        #fdf1e3,
+        #051623 80%
+    );
+}
+
 .header {
     background: url("/images/hero.png") no-repeat top center;
     width: 100%;
